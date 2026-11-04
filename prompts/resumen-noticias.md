@@ -61,6 +61,12 @@ Leé cada mail completo. Para cada noticia que encuentres, anotá:
 Ignorá la publicidad, los anuncios patrocinados, las ofertas de empleo, los avisos de la cuenta
 y los mails que no traen noticias.
 
+**Tema obligatorio: inteligencia artificial.** Quedate solo con las noticias cuyo tema central
+sea la IA: modelos, lanzamientos, investigación, empresas del sector, regulación, chips o
+infraestructura para IA, y usos o impacto de la IA. Descartá las que solo la mencionan de pasada,
+los tutoriales, los prompts sueltos, las listas de herramientas sin una noticia detrás y las
+promociones de cursos o eventos.
+
 ## Paso 4 — Deduplicar
 
 Agrupá las noticias que cuentan **el mismo hecho**, aunque tengan títulos distintos o estén en otro
@@ -71,10 +77,12 @@ idioma. De cada grupo queda una sola noticia, con:
 
 ## Paso 5 — Elegir las principales
 
-Ordená por **relevancia general**:
-1. impacto real (cuánta gente afecta, si es un hecho nuevo, sus consecuencias),
+Ordená las noticias de IA por **relevancia**:
+1. impacto real en el mundo de la IA (lanzamientos importantes, avances técnicos, movimientos de
+   las grandes empresas, regulación, consecuencias para la industria y para los usuarios),
 2. un plus si la cubren varios newsletters,
-3. variedad: evitá que las 5 sean del mismo tema si hay alternativas de importancia parecida.
+3. variedad dentro de la IA: evitá que las 5 traten sobre la misma empresa o el mismo subtema si
+   hay alternativas de importancia parecida.
 
 Quedate con `cantidad_noticias` (por defecto 5). Si hay menos, mandá las que haya.
 

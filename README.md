@@ -3,7 +3,7 @@
 Una Routine de Claude Code que corre todos los días a la mañana (hora de Argentina) y hace esto:
 
 1. Busca en Gmail los **newsletters no leídos** de los remitentes de `config/remitentes.txt`.
-2. Extrae las noticias, **junta las repetidas** y elige las **5 más relevantes**.
+2. Extrae las noticias **sobre inteligencia artificial**, **junta las repetidas** y elige las **5 más relevantes**.
 3. Las **traduce al español** (título y resumen de 2-3 líneas, con el link original).
 4. Te manda un **mail HTML** con el resumen a la dirección configurada.
 5. Recién después de confirmar el envío, **marca como leídos** los newsletters procesados.
