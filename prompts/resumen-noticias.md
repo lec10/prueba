@@ -21,6 +21,11 @@ Comprobá que tenés herramientas del conector Gmail para:
 2. **enviar** un mail (no alcanza con crear un borrador),
 3. **marcar como leído** (sacar la etiqueta `UNREAD` o algo equivalente).
 
+Nombres esperados en el conector Gmail de claude.ai: "Search email threads", "Get email message",
+"Get email thread", "Send email message" y "Remove labels from message" o "Modify message labels"
+(para sacar `UNREAD`). Usá solo esas. No uses las de borrar, mandar a spam o a la papelera,
+reenviar, responder ni las de borradores.
+
 Si falta cualquiera de las tres, **no hagas nada en Gmail** y terminá con el mensaje:
 `ERROR: el conector Gmail no permite <capacidad faltante>. No se procesó ni se marcó ningún mail.`
 Listá las herramientas de Gmail que sí encontraste.
@@ -120,7 +125,8 @@ Si el envío falla, **no marques nada como leído** y terminá con:
 
 ## Paso 9 — Marcar como leídos
 
-Solo después de confirmar el envío, marcá como leídos **todos** los mails del Paso 2, también los
+Solo después de confirmar el envío, marcá como leídos **todos** los mails del Paso 2 (sacándoles
+la etiqueta `UNREAD` de cada mensaje), también los
 que no aportaron noticias. Si alguno falla, reintentalo una vez y anotá cuáles quedaron sin marcar.
 
 ## Paso 10 — Reporte final
