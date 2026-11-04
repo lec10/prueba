@@ -10,3 +10,8 @@
 # @axios.com
 # hello@tldrnewsletter.com
 # @substack.com
+
+ai-signal@mail.beehiiv.com
+news@daily.therundown.ai
+explicable@substack.com
+astro@forwardfuture.ai
