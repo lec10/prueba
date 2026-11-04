@@ -1,0 +1,73 @@
+<!--
+  Plantilla del mail "Resumen de noticias".
+  Placeholders globales: {{FECHA}}, {{CANTIDAD_MAILS}}, {{CANTIDAD_NOTICIAS}}, {{REMITENTES}}
+  El bloque entre los comentarios TARJETA:INICIO y TARJETA:FIN se repite una vez por noticia,
+  reemplazando {{NUMERO}}, {{TITULO}}, {{RESUMEN}}, {{FUENTES}}, {{LINK}}.
+  Todos los estilos son inline y el layout usa tablas para que Gmail (web y móvil) lo respete.
+-->
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resumen de noticias</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f2f4f7;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f2f4f7;">
+    <tr>
+      <td align="center" style="padding:24px 12px;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;">
+
+          <!-- Encabezado -->
+          <tr>
+            <td style="background-color:#1f3a5f;border-radius:12px 12px 0 0;padding:28px 28px 24px 28px;font-family:Arial,Helvetica,sans-serif;">
+              <div style="font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#a9c2e0;">Resumen diario</div>
+              <div style="font-size:26px;font-weight:bold;color:#ffffff;margin-top:6px;">📰 Las {{CANTIDAD_NOTICIAS}} noticias del día</div>
+              <div style="font-size:14px;color:#d5e2f1;margin-top:8px;">{{FECHA}} · a partir de {{CANTIDAD_MAILS}} newsletters</div>
+            </td>
+          </tr>
+
+          <!-- Cuerpo -->
+          <tr>
+            <td style="background-color:#ffffff;padding:8px 20px 8px 20px;border-radius:0 0 12px 12px;">
+
+              <!-- TARJETA:INICIO -->
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:16px 0;border:1px solid #e3e8ef;border-radius:10px;">
+                <tr>
+                  <td width="44" valign="top" style="padding:18px 0 18px 16px;font-family:Arial,Helvetica,sans-serif;">
+                    <div style="width:32px;height:32px;line-height:32px;border-radius:16px;background-color:#e8f0fa;color:#1f3a5f;font-weight:bold;font-size:15px;text-align:center;">{{NUMERO}}</div>
+                  </td>
+                  <td valign="top" style="padding:18px 18px 18px 12px;font-family:Arial,Helvetica,sans-serif;">
+                    <div style="font-size:18px;line-height:24px;font-weight:bold;color:#14213d;">{{TITULO}}</div>
+                    <div style="font-size:15px;line-height:22px;color:#3d4756;margin-top:8px;">{{RESUMEN}}</div>
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-top:14px;">
+                      <tr>
+                        <td style="font-size:12px;color:#5b6b80;background-color:#f2f4f7;border-radius:12px;padding:4px 10px;font-family:Arial,Helvetica,sans-serif;">Fuente: {{FUENTES}}</td>
+                        <td width="10"></td>
+                        <td style="border-radius:6px;background-color:#1f3a5f;">
+                          <a href="{{LINK}}" style="display:inline-block;white-space:nowrap;padding:6px 14px;font-size:13px;font-weight:bold;color:#ffffff;text-decoration:none;font-family:Arial,Helvetica,sans-serif;">Leer más →</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!-- TARJETA:FIN -->
+
+            </td>
+          </tr>
+
+          <!-- Pie -->
+          <tr>
+            <td style="padding:18px 12px;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:18px;color:#7a8696;text-align:center;">
+              Newsletters leídos en esta corrida: {{REMITENTES}}<br>
+              Generado automáticamente por la rutina "Resumen diario de noticias". Los mails de origen se marcaron como leídos.
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

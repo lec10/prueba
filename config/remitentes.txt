@@ -1,0 +1,12 @@
+# Remitentes de newsletters que procesa la rutina "Resumen diario de noticias".
+#
+# - Un remitente por línea.
+# - Puede ser una dirección completa (news@ejemplo.com) o un dominio entero (@ejemplo.com).
+# - Las líneas que empiezan con # y las vacías se ignoran.
+# - Si no queda ningún remitente válido, la rutina NO procesa nada y avisa.
+#
+# Ejemplos (sacales el # para activarlos o reemplazalos por los tuyos):
+# newsletter@nytimes.com
+# @axios.com
+# hello@tldrnewsletter.com
+# @substack.com
